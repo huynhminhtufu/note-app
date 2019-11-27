@@ -1,0 +1,40 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "plugins": ["stylelint-scss", "stylelint-order", "stylelint-prettier"],
+  "rules": {
+    "declaration-block-trailing-semicolon": null,
+    "function-url-quotes": null,
+    "function-parentheses-space-inside": null,
+    "max-nesting-depth": 2,
+    "selector-class-pattern": [
+      "^[a-z]+[a-zA-Z0-9]*$",
+      {
+        "message": "Selector should be written in lower camelCase (selector-class-pattern)"
+      }
+    ],
+    "scss/at-mixin-pattern": [
+      "^[a-z]+[a-zA-Z0-9]*$",
+      {
+        "message": "Mixins should be written in lower camelCase (scss/at-mixin-pattern)"
+      }
+    ],
+    "scss/percent-placeholder-pattern": [
+      "^[a-z]+[a-zA-Z0-9]*$",
+      {
+        "message": "%placeholder should be written in lower camelCase (scss/percent-placeholder-pattern)"
+      }
+    ],
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": ["attribute", "class", "id"]
+      }
+    ],
+    "scss/dollar-variable-pattern": [
+      "^[a-z]+[a-zA-Z0-9]*$",
+      {
+        "message": "Variable name should be written in lower camelCase (scss/dollar-variable-pattern)"
+      }
+    ]
+  }
+}
